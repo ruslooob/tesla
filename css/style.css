@@ -5,6 +5,14 @@
   margin: 0 auto;
 }
 
+.wrapper .car-present__image-wrapper {
+  width: 1315px;
+  height: 450px;
+  background-image: url("../img/tesla-background.png"), url("../img/Tesla-Wordmark-Red.jpg");
+  background-repeat: no-repeat;
+  background-position: center, 0 -145px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +20,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 51px;
   /* стилизация всех навигационных элементов */
 }
 

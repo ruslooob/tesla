@@ -3,11 +3,22 @@
 .wrapper {
 	width: 1315px;
 	margin: 0 auto;
+
+	.car-present {
+		&__image-wrapper {
+			width: 1315px;
+			height: 450px;
+			background-image: url("../img/tesla-background.png"), url("../img/Tesla-Wordmark-Red.jpg");
+			background-repeat: no-repeat;
+			background-position: center, 0 -145px;
+		}
+	}
 }
 
 .header {
 	display: flex;
 	align-items: center;
+	height: 51px;
 
 	&__logo {
 		margin-right: 200px; /* 274 */
