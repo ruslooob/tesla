@@ -1,16 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,900&display=swap");
 
+body {
+	font-family: Montserrat;
+	background: white;
+}
+
 .wrapper {
 	width: 1315px;
 	margin: 0 auto;
 
 	.car-present {
+		&__title {
+			$self: ".title";
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 41px;
+
+			#{ $self }__main-title {
+				font-size: 90px;
+				font-weight: 600;
+			}
+
+			#{ $self }__subtitle {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
 		&__image-wrapper {
 			width: 1315px;
 			height: 450px;
 			background-image: url("../img/tesla-background.png"), url("../img/Tesla-Wordmark-Red.jpg");
 			background-repeat: no-repeat;
 			background-position: center, 0 -145px;
+		}
+
+		&__characteristics {
+			$self: ".characteristics";
+			ul {
+				display: flex;
+				justify-content: center;
+				li {
+					display: flex;
+					align-items: center;
+					margin-left: 80px;
+
+					.info__big {
+						font-size: 35px;
+						font-weight: 600;
+
+						span {
+							font-size: 20px;
+							font-weight: 400;
+						}
+					}
+					.info__small {
+						font-size: 12px;
+					}
+
+					a {
+						font-size: 13px;
+						font-weight: 700;
+						text-decoration: none;
+						text-transform: uppercase;
+						color: black;
+					}
+
+					div {
+						margin-right: 10px;
+					}
+				}
+
+				button {
+					width: 159px;
+					height: 39px;
+					border: 2px solid #e51937;
+					background: white;
+
+					a {
+						color: #e51937;
+					}
+				}
+			}
 		}
 	}
 }
@@ -30,8 +101,7 @@
 		display: flex;
 
 		li {
-			font-family: Montserrat;
-			font-weight: 700;
+			font-weight: 600;
 
 			a {
 				text-decoration: none;
