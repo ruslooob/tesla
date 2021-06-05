@@ -76,12 +76,23 @@ body {
 					height: 39px;
 					border: 2px solid #e51937;
 					background: white;
+					cursor: pointer;
 
 					a {
 						color: #e51937;
 					}
 				}
 			}
+		}
+
+		&__arrow {
+			height: 20px;
+			margin-top: 20px;
+			background-image: url("../img/Vector.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+
+			cursor: pointer;
 		}
 	}
 }

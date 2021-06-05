@@ -92,10 +92,20 @@ body {
   height: 39px;
   border: 2px solid #e51937;
   background: white;
+  cursor: pointer;
 }
 
 .wrapper .car-present__characteristics ul button a {
   color: #e51937;
+}
+
+.wrapper .car-present__arrow {
+  height: 20px;
+  margin-top: 20px;
+  background-image: url("../img/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .header {
