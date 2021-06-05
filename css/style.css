@@ -21,11 +21,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 41px;
 }
 
 .wrapper .car-present__title .title__main-title {
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 600;
 }
 
@@ -36,10 +35,12 @@ body {
 
 .wrapper .car-present__image-wrapper {
   width: 1315px;
-  height: 450px;
+  height: 375px;
   background-image: url("../img/tesla-background.png"), url("../img/Tesla-Wordmark-Red.jpg");
   background-repeat: no-repeat;
-  background-position: center, 0 -145px;
+  background-position: center, 100px -110px;
+  /* 0 145*/
+  background-size: 765px 350px, 85%;
 }
 
 .wrapper .car-present__characteristics ul {
@@ -58,7 +59,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 40px;
 }
 
 .wrapper .car-present__characteristics ul li .info__big {
@@ -83,12 +87,12 @@ body {
   color: black;
 }
 
-.wrapper .car-present__characteristics ul li div {
+.wrapper .car-present__characteristics ul li div:first-child {
   margin-right: 10px;
 }
 
 .wrapper .car-present__characteristics ul button {
-  width: 159px;
+  width: 120px;
   height: 39px;
   border: 2px solid #e51937;
   background: white;

@@ -15,10 +15,11 @@ body {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-bottom: 41px;
+			// margin-bottom: 0;
 
 			#{ $self }__main-title {
-				font-size: 90px;
+				// font-size: 90px;
+				font-size: 70px;
 				font-weight: 600;
 			}
 
@@ -29,10 +30,12 @@ body {
 		}
 		&__image-wrapper {
 			width: 1315px;
-			height: 450px;
+			// height: 450px;
+			height: 375px;
 			background-image: url("../img/tesla-background.png"), url("../img/Tesla-Wordmark-Red.jpg");
 			background-repeat: no-repeat;
-			background-position: center, 0 -145px;
+			background-position: center, 100px -110px; /* 0 145*/
+			background-size: 765px 350px, 85%;
 		}
 
 		&__characteristics {
@@ -43,7 +46,8 @@ body {
 				li {
 					display: flex;
 					align-items: center;
-					margin-left: 80px;
+					justify-content: center;
+					margin-left: 40px; //80
 
 					.info__big {
 						font-size: 35px;
@@ -66,13 +70,13 @@ body {
 						color: black;
 					}
 
-					div {
+					div:first-child {
 						margin-right: 10px;
 					}
 				}
 
 				button {
-					width: 159px;
+					width: 120px; // 159
 					height: 39px;
 					border: 2px solid #e51937;
 					background: white;
