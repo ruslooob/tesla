@@ -6,7 +6,10 @@ body {
 }
 
 .wrapper {
-	width: 1315px;
+	width: 100%;
+	max-width: 1315px;
+	height: 100vh;
+
 	margin: 0 auto;
 
 	.car-present {
@@ -121,9 +124,18 @@ body {
 			a {
 				text-decoration: none;
 				color: black;
+				transition: border 0.2s linear;
+
+				&:hover {
+					border-bottom: 2px solid black;
+				}
 			}
 		}
 		/* !!! */
+		#{ $carModels }__model-s a {
+			color: #e51937;
+			border-bottom: 2px solid #e51937;
+		}
 		#{ $carModels }__model-x {
 			margin-left: 64px;
 		}
@@ -148,6 +160,111 @@ body {
 
 		#{ $otherNavs }__burger {
 			margin-left: 29px;
+		}
+	}
+}
+
+.future-driving {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #e51937;
+
+	width: 100%;
+	height: 100vh;
+
+	margin: 0 auto;
+
+	&__bg {
+		background-image: url("../img/tesla-saloon.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 55px;
+		width: 100%;
+	}
+
+	&__title {
+		margin: 64px 80px;
+
+		font-size: 60px;
+		font-weight: 700;
+		color: #e51937;
+	}
+
+	&__info {
+		$self: ".info";
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		width: 40%;
+
+		background-color: #e51937;
+		color: white;
+
+		padding: 56px 52px;
+
+		#{ $self }__title {
+			font-size: 25px;
+			font-weight: 600;
+		}
+
+		#{ $self }__text {
+			font-size: 15px;
+		}
+
+		.characteristics {
+			ul li {
+				display: flex;
+
+				margin-top: 30px;
+				.info {
+					margin-left: 15px;
+					.info__big {
+						font-size: 30px;
+						span {
+							font-size: 15px;
+						}
+					}
+				}
+
+				.info__small {
+					font-size: 12px;
+				}
+			}
+
+			.characteristics__wifi {
+				position: relative;
+				top: 0;
+				left: -5px;
+			}
+		}
+		.characteristics__end {
+			display: flex;
+			align-items: center;
+			.end__learn-more {
+				margin-left: 10px;
+				margin-right: 30px;
+
+				text-transform: uppercase;
+				text-decoration: none;
+
+				color: white;
+				font-size: 13px;
+				font-weight: 700;
+			}
+			button {
+				width: 120px; // 159
+				height: 39px;
+				border: 2px solid white;
+				background: #e51937;
+				cursor: pointer;
+
+				a {
+					color: white;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
